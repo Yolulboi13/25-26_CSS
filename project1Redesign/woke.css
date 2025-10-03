@@ -1,0 +1,48 @@
+.container{
+    width: 1080px;
+    margin: auto;
+    background-color: darkslategray;
+}
+.header{
+    background-color: aquamarine;
+    width: 600px;:
+    height: 100px;
+    text-align: center;
+}
+.navbar ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E3231;
+}
+.navbar ul li{
+    float: left;
+}
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    background-color: cadetblue;
+    color: white;
+    text-decoration: underline;
+}
+.content{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    height: 600px;
+}
+.content h1{
+    color: white;
+}
+.card{
+    width:
+}
+.footer{}
