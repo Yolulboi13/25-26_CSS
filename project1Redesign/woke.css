@@ -35,14 +35,24 @@
 }
 .content{
     text-align: center;
-    width: 60%;
+    width: 50%;
     margin: auto;
     height: 600px;
+    float: left;
 }
-.content h1{
+h1{
     color: white;
 }
 .card{
-    width:
+    width: 90%;
+    padding: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.25s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 .footer{}
+img{
+
+}
