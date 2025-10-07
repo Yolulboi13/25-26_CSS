@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1E3231;
+    background-color: darkslategray;
 }
 .navbar ul li{
     float: left;
@@ -36,12 +36,12 @@
 .content{
     text-align: center;
     width: 50%;
-    margin: auto;
-    height: 600px;
     float: left;
+    background-color: #1E3231;
 }
 h1{
     color: white;
+    padding: 314px 16px;
 }
 .card{
     width: 90%;
@@ -50,9 +50,9 @@ h1{
     transition: 0.25s;
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(152, 90, 112, 0.5);
 }
 .footer{}
 img{
-
+    width: 375px;
 }
