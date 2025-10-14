@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Web Development</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+                    'header header header header header header'
+                    'menu main main main main right'
+                    'footer footer footer footer footer footer';
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-container > div{
+             padding: 10px;
+             font-size: 16px;
+        }
+        .item1{
+            grid-area: header;
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+        }
+        .item1 > h1{
+            font-size: 40px;
+        }
+        .item2{
+            grid-area: menu;
+        }
+        .item2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .item2 li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: deepskyblue;
+            transition: 0.3s;
+        }
+        .item2 li:hover{
+            background-color: darkblue;
+            color: white;
+        }
+        .item3{
+            grid-area: main;
+        }
+        .item3 > h1{
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+        .item3 > p{
+            margin-bottom: 7px;
+        }
+        .item4{
+            grid-area: right;
+            border: 2px solid darkslateblue;
+            background-color: white;
+            padding: 15px;
+        }
+        .item5{
+            grid-area: footer;
+            background-color: darkseagreen;
+            color: white;
+            text-align: center;
+        }
+        @media only screen and (max-width: 600px){
+            body{
+                background-color: burlywood;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+
+    <div class="item1">
+        <h1> Gerald Quantavious Higglebotom X Esquire Jr. </h1>
+    </div>
+    <div class="item2">
+        <ul>
+            <li>Thing 1</li>
+            <li>Thing 2</li>
+            <li>The Cat in the Hat</li>
+        </ul>
+    </div>
+    <div class="item3">
+        <h1>Who Is Gerald?</h1>
+        <p>Gerald is the junior senior undergraduate bachelor degree PhD god emperor of Sulopdanavdia</p>
+    </div>
+    <div class="item4">
+        <h2> MORE STUFF </h2>
+        <ul>
+            <li>Thing -1</li>
+            <li>Thing -2</li>
+            <li>The Dog in the Clogs</li>
+        </ul>
+    </div>
+    <div class="item5">
+        <p>Ooooooooooooo this is fancy.</p>
+    </div>
+
+</div>
+</body>
+</html>
