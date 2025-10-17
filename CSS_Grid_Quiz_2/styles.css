@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        'header header header header '
+        'left main main right'
+        'footer footer footer footer';
+    gap: 10px;
+    padding: 10px;
+    background-color:#DCDDDF;
+}
+.site-header{
+    grid-area: header;
+    background-color: #A1C7DE;
+    text-align: center;
+    padding: 50px;
+}
+.site-header > h1{
+    font-size: 50px;
+}
+.main-nav{
+    grid-area:left;
+    background-color: #EEEFF1;
+    padding: 25px;
+}
+.main-nav > h2{
+    padding-bottom: 25px;
+}
+.main-nav > ul > li > a{
+    list-style: none;
+    color: #5D6F7C;
+    text-decoration: none;
+    transition: .3s;
+}
+.main-nav > ul > li > a:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+.main-content{
+    grid-area:main;
+    background-color: #FDFDFD;
+    padding: 50px;
+}
+.main-content > p{
+    padding:10px;
+}
+.main-content > h2{
+    padding: 10px;
+}
+.site-sidebar{
+    grid-area:right;
+    background-color: #EEEFF1;
+    padding: 25px;
+}
+.site-sidebar > h2{
+    padding: 10px 0px;
+}
+.site-sidebar > p{
+    padding-bottom: 35px;
+}
+.site-footer{
+    grid-area:footer;
+    background-color: #416285;
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        .site-header{grid-area:1/span 4}
+        .main-nav{grid-area:2/span 4}
+        .main-content{grid-area:3/span 4}
+        .site-sidebar{grid-area:4/span 4}
+        .site-footer{grid-area:5/span 4}
+    }
+}
+@media only screen and (min-width: 850px){
+    body{
+        .site-header{grid-area:1/span 4}
+        .main-nav{grid-area:2/span 1}
+        .main-content{grid-area:2/span 2}
+        .site-sidebar{grid-area:2/span 1}
+        .site-footer{grid-area:3/span 4}
+    }
+}
+@media only screen and (orientation:landscape){
+    .main-nav, .main-content, .site-sidebar{
+        background-color: black;
+    }
+    .grid-container{
+        background-color: dimgrey;
+    }
+    .site-header{
+        background-color: lightslategrey;
+    }
+    .site-footer{
+        background-color: #1C2348;
+    }
+    *{
+        color:white;
+    }
+}
