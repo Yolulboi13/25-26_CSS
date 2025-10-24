@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    background: rgba(11, 20, 18, 1);
+}
 .container{
     display: grid;
     grid-template-areas:
@@ -61,26 +64,30 @@
     font-size: 70px;
 }
 .feature1{
+    padding-top: 10px;
     grid-area: feat1;
     background-color: #3B4E56;
     transition: 0.2s;
     color: white;
 }
 .feature2{
+    padding-top: 10px;
     grid-area: feat2;
     background-color: #29383A;
     transition: 0.2s;
     color: white;
 }
 .feature3{
+    padding-top: 10px;
     grid-area: feat3;
     transition: 0.2s;
     background-color: #182221;
     color: white;
 }
 .feature1 > a> img, .feature2 > a> img, .feature3 > a> img{
-     width: 415px;
-    padding-left: 10px
+    width: 385px;
+    padding-left: 10px;
+    padding-top: 10px;
  }
 .feature1:hover, .feature2:hover, .feature3:hover{
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
@@ -91,4 +98,15 @@
     height: 50px;
     color: white;
     text-align: center;
+}
+table{
+    border-color: white;
+}
+a{
+    color: lightblue;
+    transition: 0.2s;
+}
+a:hover{
+    text-decoration: none;
+    color: darkcyan;
 }
